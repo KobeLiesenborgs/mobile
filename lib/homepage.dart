@@ -18,15 +18,13 @@ class _HomePageState extends State<HomePage> {
               child: Text("Haptic"),
               onPressed: () {
                 Navigator.pushNamed(context, '/Haptic');
-              }
-          ),
+              }),
           ElevatedButton(
               child: Text("GPS"),
               onPressed: () {
                 Navigator.pushNamed(context, '/GPS');
-              }
-          )
-          ]),
+              })
+        ]),
         Row(children: <Widget>[
           ElevatedButton(
               child: Text("Camera"),
@@ -38,7 +36,19 @@ class _HomePageState extends State<HomePage> {
               onPressed: () {
                 Navigator.pushNamed(context, '/NOPE');
               })
-          ])
+        ]),
+        Row(children: <Widget>[
+          ElevatedButton(
+              child: Text("Rotation"),
+              onPressed: () {
+                Navigator.pushNamed(context, '/Rotation');
+              }),
+          ElevatedButton(
+              child: Text("Drag"),
+              onPressed: () {
+                Navigator.pushNamed(context, '/Drag');
+              })
+        ])
       ]),
     );
   }
